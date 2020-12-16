@@ -48,7 +48,7 @@
 
         </Grid>
 
-        <Grid x:Name="locationsGrid"
+        <Grid x:Name="foundLocationsGrid"
               HorizontalAlignment = "Left"
               Width="auto"
               Margin = "10,10,0,0" 
@@ -56,7 +56,7 @@
               Grid.Row="1"
               Grid.Column="0">
 
-            <GroupBox Header="Locations" VerticalAlignment="Top" Height="80">
+            <GroupBox Header="Location Results" VerticalAlignment="Top" Height="80">
                 <StackPanel Orientation="Horizontal">
                     <ComboBox HorizontalAlignment="Left" Height="35" Margin="5,10,0,0" VerticalAlignment="Top" Width="200" ItemsSource="{Binding Path = Locations}" SelectedItem="{Binding Path = SelectedLocation, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Title">
                         <behaviours:Interaction.Triggers>
